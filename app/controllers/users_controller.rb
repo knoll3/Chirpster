@@ -5,9 +5,9 @@ class UsersController < ApplicationController
     
     # Practice exercise
     @t = Time.now
-    @hour = format("%02d", @t.hour)
-    @min =  format("%02d", @t.min )
-    @sec =  format("%02d", @t.sec )
+    @hour = format( "%02d", @t.hour )
+    @min  = format( "%02d", @t.min  )
+    @sec  = format( "%02d", @t.sec  )
   end
   
   def new
