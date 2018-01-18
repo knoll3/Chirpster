@@ -3,4 +3,8 @@
   <b>Email:    </b><%= @user.email      %><br>
   <b>Created:  </b><%= @user.created_at %><br>
   <b>Updated:  </b><%= @user.updated_at %><br>
+  <div style="text-align:right">
+    <b>Current Time</b>
+    <%= "#{@hour}:#{@min}:#{@sec}" %>
+  </div>
 </pre>
