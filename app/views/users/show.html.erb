@@ -1,6 +1,5 @@
-<pre>
-  <b>Username: </b><%= @user.name       %><br>
-  <b>Email:    </b><%= @user.email      %><br>
-  <b>Created:  </b><%= @user.created_at %><br>
-  <b>Updated:  </b><%= @user.updated_at %><br>
-</pre>
+<% provide( :title, @user.name ) %>
+<h1>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+</h1>
