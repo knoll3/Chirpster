@@ -41,3 +41,4 @@ For more information, see the
 [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
 
 # End of chapter 5 comment
+# Finish user sign up comment
