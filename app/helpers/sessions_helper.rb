@@ -40,6 +40,7 @@ module SessionsHelper
     user.forget
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
+    # debugger
   end
   
   # Logs out the current user
