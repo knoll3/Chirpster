@@ -20,7 +20,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get users_path
     assert_template 'users/index'
     assert_select "div.container"
-    assert_select "a[href=?]", "/users/#{@user.id}"
+    assert_select "a[href=?]", user_path(@user)
   end
-
 end
