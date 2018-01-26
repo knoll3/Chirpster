@@ -22,4 +22,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "div.container"
     assert_select "a[href=?]", user_path(@user)
   end
+  
+  # test "nonactive user should be activated to show page" do
+  #   get users_path(@other_user)
+  #   assert_template 'static_pages/home'
+  # end
 end
